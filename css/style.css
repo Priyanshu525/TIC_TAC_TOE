@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Bevan&family=Changa+One&family=Kreon&family=Rowdies:wght@300&family=Tilt+Warp&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bevan&family=Changa+One&family=Delicious+Handrawn&family=Kreon&family=Rowdies:wght@300&family=Tilt+Warp&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bevan&family=Changa+One&family=Delicious+Handrawn&family=Josefin+Sans:wght@500&family=Kreon&family=Rowdies:wght@300&family=Tilt+Warp&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    background-color: rgb(151, 50, 65);
+}
+.gamebox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+    flex-direction: column;
+}
+.head{
+    transition: all 0.5s;
+    font-size: 50px;
+    color: #FFA500;
+    -webkit-text-stroke: 1.4px black;
+}
+.head2{
+    transition: all 0.5s;
+    font-size: 150px;
+    color: #FFA500;
+    -webkit-text-stroke: 1.4px black;
+    position: absolute;
+}
+.gamecont{
+    transition: all 0.5s;
+    margin-top: 50px;
+    display: grid;
+    grid-template-rows: repeat(3,12vh);
+    grid-template-columns: repeat(3,12vh);
+    
+}
+.box{
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+    font-weight: bold;
+   font-size: 40px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+}
+.box:hover{
+    background-color:rgb(212, 111, 126) ;
+    border-radius: 4px;
+
+}
+.boxinner{
+    color: #FFA500;
+    -webkit-text-stroke: 1.5px black;
+}
+.b0{
+    border-right: 0px;
+}
+.bb0{
+    border-bottom: 0px;
+}
+.btn{
+    margin-top:30px ;
+    font-family: 'Delicious Handrawn', cursive;
+    font-weight: bold;
+    font-size: 25px;
+    border: 2px solid black;
+    border-radius: 12px;
+    padding: 8px;
+    transition: all 0.1s;
+    background-color: #FFA500;
+    margin-left: 1vw;
+}
+.btn:hover{
+    transform: scale(1.05);
+background-color: #f5b235;
+}
+.turn{
+    margin-top: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+#popper{
+    width: 10vw;
+    height: 10vh;
+    margin-bottom: 10px;
+    display: none;
+    margin-left: 3vw;
+}
+#party{
+    margin-top: 0;
+    position: absolute;
+    width: 100%;
+    height: 50vh;
+    display:none;
+}
+.resetarea{
+    margin: 10px;
+    display: flex;
+}
+/* footer  */
+#bye{
+    position:absolute;
+    width: 100%;
+    bottom: 0;
+    margin: 0;
+    color: white;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    background: none;
+  }
+  #bye li img{
+    height: 30px;
+  width: 30px;
+  border: 2px solid white;
+  border-radius: 300px;
+  margin: 10px;
+  padding: 1px;
+  }
+  #bye li img{
+    transition: all 0.2s;
+
+  }
+  #bye li img:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 8px white;
+  }
+  #bye ul{
+    list-style: none;
+    display: flex;
+  }
+  #mebt{
+  
+    height: 30px;
+    width: 30px;
+    border: 2px solid white;
+    border-radius: 300px;
+    margin: 10px;
+  }
+  .last{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:  rgb(11, 10, 15);
+  }
+  
+  #last {
+  
+  
+    color: white;
+  }
+  #in{
+    padding: 10px;
+  }
+  #ins{
+    border: none;
+  }
+  @media screen and (max-width:430px) {
+    #popper{
+        width: 20vw;
+    }
+  }
